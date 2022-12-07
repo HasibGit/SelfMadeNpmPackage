@@ -3,5 +3,36 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "havatar": {
+      "projectType": "library",
+      "root": "projects/havatar",
+      "sourceRoot": "projects/havatar/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/havatar/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/havatar/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/havatar/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/havatar/src/test.ts",
+            "tsConfig": "projects/havatar/tsconfig.spec.json",
+            "karmaConfig": "projects/havatar/karma.conf.js"
+          }
+        }
+      }
+    }
   }
 }
