@@ -2,10 +2,19 @@
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.0.
 
+## How to use
+
+- Install the package using npm
+- Import it in your module
+- Add the avatar component in your template using <h-avatar> component selector
+- As the profile name, pass an input name with the selector. Example:
+  <h-avatar [name]="Joe Gage">
+
 ## Code scaffolding
 
 Run `ng generate component component-name --project havatar` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project havatar`.
-> Note: Don't forget to add `--project havatar` or else it will be added to the default project in your `angular.json` file. 
+
+> Note: Don't forget to add `--project havatar` or else it will be added to the default project in your `angular.json` file.
 
 ## Build
 
