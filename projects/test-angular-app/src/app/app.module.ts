@@ -4,11 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 import { HavatarModule } from 'havatar';
-import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, HavatarModule, FlexLayoutModule],
+  imports: [BrowserModule, HavatarModule],
   providers: [],
   bootstrap: [AppComponent],
 })
